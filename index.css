@@ -51,3 +51,42 @@ body {
     font-size: 1.5rem;
     color: rgb(219, 100, 124); 
 }
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    animation: heartbeat 2s infinite alternate; /* Aplica a animação de crescimento e diminuição */
+}
+
+.heart::before,
+.heart::after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+
+.heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
