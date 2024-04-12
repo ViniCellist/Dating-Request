@@ -20,7 +20,7 @@ body {
     position: relative;
     background-color: rgb(219, 100, 124);
     color: white;
-    text-align: center;
+    
 }
 
 .maindiv {
@@ -35,6 +35,10 @@ body {
 .test {
     width: 50%;
     height: 100%;
+}
+
+.title {
+    text-align: center;
 }
 
 .button {
