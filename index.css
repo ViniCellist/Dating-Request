@@ -20,6 +20,7 @@ body {
     position: relative;
     background-color: rgb(219, 100, 124);
     color: white;
+    text-align: center;
 }
 
 .maindiv {
